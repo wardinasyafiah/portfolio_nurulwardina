@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Portfolio by Nurul Wardina">
+  <meta name="theme-color" content="#f5ecd9">
+  <title>Creative Portfolio — Nurul Wardina</title>
+  <link rel="preload" as="image" href="assets/pages/page-1.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro-loader" id="intro-loader" aria-hidden="true">
+    <div class="loader-mark">
+      <strong>PORTFOLIO</strong>
+      <small>BY NURUL WARDINA</small>
+    </div>
+    <div class="loader-line"><span></span></div>
+  </div>
+  <div class="site-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="quick-nav" aria-label="Portfolio navigation">
+      <a href="#home" data-nav="home">HOME</a>
+      <a href="#about" data-nav="about">ABOUT ME</a>
+      <a href="#technology" data-nav="technology">TECHNOLOGY</a>
+      <a href="#education" data-nav="education">EDUCATION</a>
+      <a href="#cocurriculum" data-nav="cocurriculum">CO-CURRICULUM</a>
+      <a href="#projects" data-nav="projects">SAMPLE PROJECT</a>
+    </nav>
+  </header>
+
+  <main id="portfolio" aria-label="Nurul Wardina Creative Portfolio">
+    <section class="page reveal" id="home" data-page="1">
+      <img src="assets/pages/page-1.png" alt="Creative Portfolio by Nurul Wardina" fetchpriority="high">
+      <a class="hotspot cover-link" href="#about" aria-label="Open About Me"></a>
+      <a class="page-arrow" href="#about" aria-label="Next page">→</a>
+    </section>
+
+    <section class="page reveal" id="about" data-page="2">
+      <img src="assets/pages/page-2.png" alt="About Me" loading="lazy">
+      <a class="page-arrow" href="#technology" aria-label="Next page">→</a>
+    </section>
+
+    <section class="page reveal" id="technology" data-page="3">
+      <img src="assets/pages/page-3.png" alt="Technology" loading="lazy">
+      <a class="page-arrow" href="#education" aria-label="Next page">→</a>
+    </section>
+
+    <section class="page reveal" id="education" data-page="4">
+      <img src="assets/pages/page-4.png" alt="Education Background" loading="lazy">
+      <a class="page-arrow" href="#cocurriculum" aria-label="Next page">→</a>
+    </section>
+
+    <section class="page reveal" id="cocurriculum" data-page="5">
+      <img src="assets/pages/page-5.png" alt="Co-Curriculum" loading="lazy">
+      <a class="page-arrow" href="#projects" aria-label="Next page">→</a>
+    </section>
+
+    <section class="page reveal" id="projects" data-page="6">
+      <img src="assets/pages/page-6.png" alt="Sample Project" loading="lazy">
+      <a class="hotspot project01-link" href="#project01" aria-label="Open Project 01"></a>
+      <a class="hotspot project02-link" href="#project02" aria-label="Open Project 02"></a>
+      <a class="page-arrow" href="#project01" aria-label="Open Project 01">→</a>
+    </section>
+
+    <section class="project-page reveal" id="project01" data-page="7">
+      <div class="project-copy">
+        <div class="project-name">NURUL WARDINA</div>
+        <div class="project-title">PROJECT 01</div>
+        <div class="project-subtitle">MS BARBERSHOP WEBSITE</div>
+        <p>A web-based booking system for MS Barbershop that allows customers to easily book appointments online.</p>
+        <h3>Key features:</h3>
+        <ul>
+          <li>User registration and login</li>
+          <li>Service selection</li>
+          <li>Online appointment booking</li>
+          <li>View and cancle bookings</li>
+          <li>Responsive design</li>
+        </ul>
+      </div>
+      <div class="project-visual">
+        <div class="project-image-frame">
+          <img src="assets/img-004.png" alt="MS Barbershop Home Page" class="project-preview" loading="lazy">
+        </div>
+        <button class="gallery-button" type="button" data-gallery="project01">VIEW GALLERY <span></span></button>
+      </div>
+      <a class="page-arrow" href="#project02" aria-label="Open Project 02">→</a>
+    </section>
+
+    <section class="project-page reveal" id="project02" data-page="8">
+      <div class="project-copy">
+        <div class="project-name">NURUL WARDINA</div>
+        <div class="project-title">PROJECT 02</div>
+        <div class="project-subtitle">MR PLAYGROUND WEBSITE</div>
+        <p>A responsive company website designed to present MR Playground’s services, solutions and visual identity in a clear and engaging way.</p>
+        <h3>Key Features :</h3>
+        <ul>
+          <li>Responsive website</li>
+          <li>Company information</li>
+          <li>Solutions / services</li>
+          <li>Gallery</li>
+          <li>Contact section</li>
+        </ul>
+      </div>
+      <div class="project-visual">
+        <div class="project-image-frame project02-frame">
+          <img src="assets/img-009.png" alt="MR Playground Home Page" class="project-preview" loading="lazy">
+        </div>
+        <button class="gallery-button" type="button" data-gallery="project02">VIEW GALLERY <span></span></button>
+      </div>
+      <a class="page-arrow" href="#thankyou" aria-label="Open Thank You">→</a>
+    </section>
+
+    <section class="page reveal" id="thankyou" data-page="9">
+      <img src="assets/pages/page-9.png" alt="Thank You — Nurul Wardina" loading="lazy">
+      <a class="contact-phone" href="https://wa.me/60179572724" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 017-9572724"><span>WHATSAPP </span></a>
+      <a class="contact-email" href="mailto:wardinasyafiah31@gmail.com" aria-label="Email wardinasyafiah31@gmail.com"><span>SEND EMAIL </span></a>
+    </section>
+  </main>
+
+  <button class="back-top" id="back-top" type="button" aria-label="Back to top">↑</button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project gallery">
+    <button class="lightbox-close" type="button" aria-label="Close gallery">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image">‹</button>
+    <figure class="lightbox-stage" id="gallery-stage">
+      <img id="lightbox-image" src="" alt="Portfolio project image">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" type="button" aria-label="Next image">›</button>
+    <div class="lightbox-count" id="lightbox-count"></div>
+    <div class="gallery-thumbs" id="gallery-thumbs" aria-label="Gallery thumbnails"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
